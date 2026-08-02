@@ -31,6 +31,14 @@ Then open http://localhost:8000
 Hostname: [https://tern.niilox.com/](https://tern.niilox.com/). Advertise that
 hostname only — no redirect chains on store privacy/terms URLs.
 
+### Tern ID deep links
+
+QR codes and invites use `https://tern.niilox.com/i/{8-char-pin}`.
+
+- Landing fallback: `/i/` (SPA rewrite via `_redirects`)
+- Android App Links: `/.well-known/assetlinks.json` (debug keystore fingerprint included; add Play upload cert SHA-256 before store release)
+- iOS Universal Links: `/.well-known/apple-app-site-association` — replace `TEAMID` with the Apple Developer Team ID, then enable Associated Domains on the App ID
+
 ### Worth checking after the first deploy
 
 1. **No redirects on any URL you publish.**

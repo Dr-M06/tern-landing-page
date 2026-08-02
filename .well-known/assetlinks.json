@@ -1,0 +1,10 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "org.nomli.nlite",
+    "sha256_cert_fingerprints": [
+      "5D:24:B9:1A:BC:7D:59:3B:0E:20:26:B7:8F:F1:31:8C:8B:D7:D4:2B:3C:28:9F:C2:00:1D:38:56:DD:82:AB:42"
+    ]
+  }
+}]
