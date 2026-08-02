@@ -1,6 +1,6 @@
 # Tern
 
-> Encrypted messaging in 466 KB. No phone number. Built for weak networks.
+> Encrypted messaging in 493 KB. No phone number. Built for weak networks.
 
 Tern is a tiny end-to-end encrypted messenger from Nomli Tech Limited.
 Public site pages (all crawlable):
