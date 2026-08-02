@@ -4,7 +4,7 @@
   Permissions-Policy: geolocation=(), camera=(), microphone=(), payment=()
   Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
   X-Robots-Tag: index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1
-  Content-Security-Policy: default-src 'none'; img-src 'self' data:; style-src 'sha256-2sywQGxZHBHjZlmGZnjW2ddbGNLdqyZY/2vkZs5pLD8=' 'sha256-Rbpx+Qoa/rhvj5o9LSGNbzankttIxbVsnBA6Gj77R+o='; script-src 'sha256-4Qvo/LZGWBZalIVjIgtXfoeunwriT41c99u16VrTgs0='; base-uri 'none'; form-action 'none'
+  Content-Security-Policy: default-src 'none'; img-src 'self' data:; style-src 'sha256-2sywQGxZHBHjZlmGZnjW2ddbGNLdqyZY/2vkZs5pLD8=' 'sha256-UzwpLtrhuxUQ+uFF3ToJoX3hhYyCae5CbjxbjdcMiqY='; script-src 'sha256-4Qvo/LZGWBZalIVjIgtXfoeunwriT41c99u16VrTgs0='; base-uri 'none'; form-action 'none'
   Cache-Control: public, max-age=300, stale-while-revalidate=604800
 
 /robots.txt
