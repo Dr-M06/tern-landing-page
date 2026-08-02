@@ -47,11 +47,17 @@ text-decoration:none;border:1px solid var(--ink);color:var(--ink);white-space:no
 
 section{margin:120px 0 0}
 
-.proof>div{margin:0 0 56px}
-.proof>div:last-child{margin-bottom:0}
-.proof h2{font-size:clamp(28px,5vw,38px);line-height:1.1;letter-spacing:-.028em;
-font-weight:600;margin:0 0 8px;font-variant-numeric:tabular-nums}
-.proof p{color:var(--mute);font-size:17px;max-width:34ch}
+.proof{display:flex;flex-wrap:nowrap;align-items:flex-start;gap:0;
+padding-top:36px;border-top:1px solid var(--line)}
+.proof>div{flex:1 1 0;min-width:0;margin:0;padding:0 16px;
+border-left:1px solid var(--line)}
+.proof>div:first-child{padding-left:0;border-left:0}
+.proof>div:last-child{padding-right:0}
+.proof h2{font-size:clamp(14px,2.6cqw + 8px,22px);line-height:1.15;
+letter-spacing:-.028em;font-weight:600;margin:0 0 6px;
+font-variant-numeric:tabular-nums;text-wrap:balance}
+.proof p{color:var(--mute);font-size:clamp(11px,1.6cqw + 8px,14px);
+line-height:1.35;max-width:none}
 
 table{width:100%;border-collapse:collapse;font-size:15px;
 font-variant-numeric:tabular-nums}
@@ -78,7 +84,8 @@ font-size:12px;line-height:1.7}
 @media (max-width:560px){
 h1{margin-top:88px}
 section,footer{margin-top:88px}
-.proof>div{margin-bottom:44px}
+.proof{padding-top:28px}
+.proof>div{padding:0 10px}
 th,td{padding:14px 0}
 .get a{padding:13px 12px;font-size:14px}
 .get a .long{display:none}
@@ -108,15 +115,15 @@ tern<sup>&trade;</sup>
 </div>
 <div>
 <h2>Encrypted</h2>
-<p>Only you and the recipient.</p>
+<p>Only you and them.</p>
 </div>
 <div>
-<h2>No phone number</h2>
+<h2>No phone&nbsp;number</h2>
 <p>Your handle is enough.</p>
 </div>
 <div>
 <h2>Weak networks</h2>
-<p>Designed for places where every KB matters.</p>
+<p>Every KB matters.</p>
 </div>
 </section>
 
