@@ -28,7 +28,7 @@ Then open http://localhost:8000
 
     npx wrangler pages deploy .
 
-Hostname today: `nlite.nomli.cc` (or your dedicated domain). Advertise one
+Hostname: [https://tern.niilox.com/](https://tern.niilox.com/). Advertise that
 hostname only — no redirect chains on store privacy/terms URLs.
 
 ### Worth checking after the first deploy
