@@ -1,0 +1,25 @@
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), camera=(), microphone=(), payment=()
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+  X-Robots-Tag: index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1
+  Content-Security-Policy: default-src 'none'; img-src 'self' data:; style-src 'sha256-6seVYjcnABd+Bg8WKd96N+RgV8zyRLSUNDN5luljNMw='; script-src 'sha256-RgTsEMXXBef7PFVNVjOdAGJlUzouyyrFmF1RQGV8h1I=' 'sha256-VvoLHW6gDCAC3ckJX9/Q7vff8t9Q0qHvvKax5Vp2RYU='; base-uri 'none'; form-action 'none'
+  Cache-Control: public, max-age=300, stale-while-revalidate=604800
+
+/robots.txt
+  Content-Type: text/plain; charset=utf-8
+  Cache-Control: public, max-age=3600
+
+/sitemap.xml
+  Content-Type: application/xml; charset=utf-8
+  Cache-Control: public, max-age=3600
+
+/llms.txt
+  Content-Type: text/plain; charset=utf-8
+  Cache-Control: public, max-age=3600
+
+/nlite-latest.apk
+  Content-Type: application/vnd.android.package-archive
+  Content-Disposition: attachment; filename="nlite.apk"
+  Cache-Control: public, max-age=31536000, immutable

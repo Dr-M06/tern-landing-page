@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tern — private messaging, without the weight</title>
+<meta name="description" content="Encrypted messaging in 466 KB. No phone number. Built for weak networks.">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<link rel="canonical" href="https://nlite.nomli.cc/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Tern">
+<meta property="og:title" content="Tern — private messaging, without the weight">
+<meta property="og:description" content="Encrypted messaging in 466 KB. No phone number. Built for weak networks.">
+<meta property="og:url" content="https://nlite.nomli.cc/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Tern — private messaging, without the weight">
+<meta name="twitter:description" content="Encrypted messaging in 466 KB. No phone number. Built for weak networks.">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 96 96'%3E%3Cpath d='M65 31A24 24 0 0 1 43.8 71.6' fill='none' stroke='%23ffb33a' stroke-width='11' stroke-linecap='round'/%3E%3Cpath d='M33.2 66.9A24 24 0 0 1 26.3 37.9' fill='none' stroke='%23ffb33a' stroke-width='11' stroke-linecap='round'/%3E%3Cpath d='M31.9 30.2A24 24 0 0 1 60 27.2' fill='none' stroke='%23ffb33a' stroke-width='11' stroke-linecap='round'/%3E%3C/svg%3E">
+<style>
+:root{--ink:#111;--mute:#777;--line:#e6e6e6;--sig:#ffb33a}
+*{box-sizing:border-box;margin:0}
+body{max-width:720px;margin:auto;padding:48px 24px 96px;background:#fff;color:var(--ink);
+font:16px/1.5 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+-webkit-text-size-adjust:100%}
+
+.brand{display:flex;align-items:center;gap:11px;font-size:24px;font-weight:600;letter-spacing:-.022em}
+.brand svg{width:27px;height:27px;flex:none}
+.brand sup{font-size:.42em;font-weight:500;color:var(--mute);top:-.85em;position:relative;margin-left:1px}
+
+h1{font-size:clamp(44px,8.5vw,80px);line-height:.94;letter-spacing:-.035em;
+font-weight:600;margin:120px 0 0;text-wrap:balance}
+
+.size{margin:40px 0 0;color:var(--mute);font-size:15px;line-height:1.9;
+font-variant-numeric:tabular-nums}
+.size b{color:var(--ink);font-weight:600}
+
+.get{display:flex;flex-wrap:wrap;gap:10px;margin:40px 0 0}
+.get a{display:inline-block;border-radius:999px;padding:14px 22px;font-size:15px;
+font-weight:600;text-decoration:none;border:1px solid var(--ink);color:var(--ink)}
+.get a.on{background:var(--sig);border-color:var(--sig)}
+.get a:focus-visible{outline:2px solid var(--sig);outline-offset:3px}
+
+section{margin:120px 0 0}
+
+.proof>div{margin:0 0 56px}
+.proof>div:last-child{margin-bottom:0}
+.proof h2{font-size:clamp(28px,5vw,38px);line-height:1.1;letter-spacing:-.028em;
+font-weight:600;margin:0 0 8px;font-variant-numeric:tabular-nums}
+.proof p{color:var(--mute);font-size:17px;max-width:34ch}
+
+table{width:100%;border-collapse:collapse;font-size:15px;
+font-variant-numeric:tabular-nums}
+th,td{text-align:right;padding:16px 0;border-bottom:1px solid var(--line)}
+th:first-child,td:first-child{text-align:left;color:var(--mute);font-weight:400}
+thead th{font-size:12px;letter-spacing:.09em;text-transform:uppercase;color:var(--mute);
+font-weight:600;padding-top:0}
+thead th.us{color:var(--ink)}
+tbody td.us{font-weight:600}
+tbody tr:last-child td{border-bottom:0}
+
+blockquote{font-size:clamp(38px,8vw,64px);line-height:1;letter-spacing:-.035em;
+font-weight:600;max-width:9ch}
+blockquote span{color:var(--sig)}
+
+footer{margin:120px 0 0;padding-top:28px;border-top:1px solid var(--line);
+display:flex;flex-wrap:wrap;gap:10px 26px;font-size:15px}
+footer a{color:var(--mute);text-decoration:none}
+footer a:hover{color:var(--ink)}
+footer a:focus-visible{outline:2px solid var(--sig);outline-offset:3px}
+footer small{display:block;width:100%;margin-top:18px;color:var(--mute);
+font-size:12px;line-height:1.7}
+
+@media (max-width:560px){
+h1{margin-top:88px}
+section,footer{margin-top:88px}
+.proof>div{margin-bottom:44px}
+th,td{padding:14px 0}
+}
+</style>
+
+<header class="brand">
+<svg viewBox="0 0 96 96" aria-hidden="true"><path d="M65 31A24 24 0 0 1 43.8 71.6" fill="none" stroke="#ffb33a" stroke-width="11" stroke-linecap="round"/><path d="M33.2 66.9A24 24 0 0 1 26.3 37.9" fill="none" stroke="#ffb33a" stroke-width="11" stroke-linecap="round"/><path d="M31.9 30.2A24 24 0 0 1 60 27.2" fill="none" stroke="#ffb33a" stroke-width="11" stroke-linecap="round"/></svg>
+tern<sup>&trade;</sup>
+</header>
+
+<h1>Private messaging,<br>without the weight.</h1>
+
+<p class="size"><b>466 KB</b> Android<br><b>&lt;1.5 MB</b> iPhone</p>
+
+<div class="get">
+<!-- TODO: Play Store and App Store URLs -->
+<a class="on" href="#">Download for Android</a>
+<a href="#">Download for iPhone</a>
+</div>
+
+<section class="proof">
+<div>
+<h2>466 KB</h2>
+<p>Downloads in seconds.</p>
+</div>
+<div>
+<h2>Encrypted</h2>
+<p>Only you and the recipient.</p>
+</div>
+<div>
+<h2>No phone number</h2>
+<p>Your handle is enough.</p>
+</div>
+<div>
+<h2>Weak networks</h2>
+<p>Designed for places where every KB matters.</p>
+</div>
+</section>
+
+<section>
+<table>
+<thead><tr><th></th><th class="us">Tern</th><th>Typical messenger</th></tr></thead>
+<tbody>
+<tr><td>Download</td><td class="us">466 KB</td><td>100–300 MB</td></tr>
+<tr><td>Phone number</td><td class="us">No</td><td>Yes</td></tr>
+<tr><td>Encrypted</td><td class="us">Yes</td><td>Yes</td></tr>
+<tr><td>Handle</td><td class="us">Yes</td><td>No</td></tr>
+</tbody>
+</table>
+</section>
+
+<section>
+<blockquote>Messaging shouldn't take <span>hundreds</span> of megabytes.</blockquote>
+</section>
+
+<footer>
+<a href="#">Android</a>
+<a href="#">iPhone</a>
+<a href="/privacy/">Privacy</a>
+<a href="/terms/">Terms</a>
+<a href="mailto:dev@niilox.com">Contact</a>
+<small>Tern&trade; is an unregistered trade mark of Nomli Tech Limited, first used in commerce and first published 2 August 2026.</small>
+</footer>
