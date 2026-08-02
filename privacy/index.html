@@ -94,7 +94,8 @@ footer a:hover{color:var(--sig)}
       <li><strong>Encrypted files.</strong> Photos, documents and profile
       pictures are encrypted before upload and stored as bytes we cannot read.
       Photos and documents are deleted after 30 days. Profile pictures are
-      deleted after a year of inactivity or when you delete your account.</li>
+      deleted after a year of inactivity, or when you clear or uninstall the
+      app and we later remove unused directory data.</li>
       <li><strong>Your public encryption keys</strong> (identity and optional
       signing key, and an optional avatar descriptor), so other people can
       message you securely. Kept while your account exists.</li>
@@ -146,20 +147,22 @@ footer a:hover{color:var(--sig)}
     <p>You can also complain to a data protection authority. In the European
     Union you may contact your local supervisory authority.</p>
 
-    <h2>Deleting your account</h2>
-    <p>Delete your account from Settings in the app when that control is
-    available, or write to
-    <a href="mailto:dev@niilox.com">dev@niilox.com</a> from the email linked to
-    your recovery (if any) and ask us to close the account. Closing removes your
-    sig, device token hash, recovery link, undelivered messages, public keys and
-    profile picture from our systems. Messages you already sent to other people
-    stay on their phones, because we cannot reach into someone else’s device.
-    Reports and connection records are kept for the periods above.</p>
+    <h2>Leaving Tern</h2>
+    <p>Tern does not use a traditional account. Your chats, keys and nicknames
+    live on your phone. To leave, clear the app’s data or uninstall it — that
+    removes what Tern stored on the device.</p>
+    <p>We may still hold a public sig, key material and undelivered encrypted
+    messages on our servers for a while. Undelivered messages expire on the
+    schedule above. Write to
+    <a href="mailto:dev@niilox.com">dev@niilox.com</a> if you want us to remove
+    what we still hold about your sig. Messages you already sent to other people
+    stay on their phones. Reports and connection records are kept for the
+    periods above.</p>
 
     <h2>Children</h2>
     <p>Tern is not for anyone under 13. If you are under 18, check your local
-    law and get a parent’s permission before using it. If we learn that an
-    account belongs to a child under 13, we delete it.</p>
+    law and get a parent’s permission before using it. If we learn that someone
+    under 13 is using Tern, we remove what we hold for that sig.</p>
 
     <h2>Security</h2>
     <p>Messages are end-to-end encrypted. Files are encrypted with a key that
