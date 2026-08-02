@@ -23,6 +23,18 @@
   Content-Type: image/svg+xml
   Cache-Control: public, max-age=604800
 
+/share.png
+  Content-Type: image/png
+  Cache-Control: public, max-age=604800, immutable
+
+/og.png
+  Content-Type: image/png
+  Cache-Control: public, max-age=604800, immutable
+
+/og.svg
+  Content-Type: image/svg+xml
+  Cache-Control: public, max-age=604800
+
 /nlite-latest.apk
   Content-Type: application/vnd.android.package-archive
   Content-Disposition: attachment; filename="nlite.apk"
