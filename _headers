@@ -4,7 +4,7 @@
   Permissions-Policy: geolocation=(), camera=(), microphone=(), payment=()
   Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
   X-Robots-Tag: index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1
-  Content-Security-Policy: default-src 'none'; img-src 'self' data:; style-src 'sha256-6seVYjcnABd+Bg8WKd96N+RgV8zyRLSUNDN5luljNMw='; script-src 'sha256-RgTsEMXXBef7PFVNVjOdAGJlUzouyyrFmF1RQGV8h1I=' 'sha256-VvoLHW6gDCAC3ckJX9/Q7vff8t9Q0qHvvKax5Vp2RYU='; base-uri 'none'; form-action 'none'
+  Content-Security-Policy: default-src 'none'; img-src 'self' data:; style-src 'sha256-X1vYCcjcM644WQfb38S71O4jAZDWabZ8bZJ3JxiBDN4=' 'sha256-e6O7H943+VWAMLhfuRQaBiPjzAtbG57v/CPQMQwQlgA='; script-src 'sha256-4Qvo/LZGWBZalIVjIgtXfoeunwriT41c99u16VrTgs0='; base-uri 'none'; form-action 'none'
   Cache-Control: public, max-age=300, stale-while-revalidate=604800
 
 /robots.txt
@@ -18,6 +18,10 @@
 /llms.txt
   Content-Type: text/plain; charset=utf-8
   Cache-Control: public, max-age=3600
+
+/favicon.svg
+  Content-Type: image/svg+xml
+  Cache-Control: public, max-age=604800
 
 /nlite-latest.apk
   Content-Type: application/vnd.android.package-archive
