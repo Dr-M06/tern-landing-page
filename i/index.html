@@ -43,7 +43,7 @@ tern<span class="tm" aria-hidden="true">&trade;</span>
 <div id="ok" hidden>
 <h1>Tern ID</h1>
 <p class="pin" id="pin"></p>
-<p class="hint">Encrypted messaging without a phone number. Open this link in Tern to start a chat.</p>
+<p class="hint">Encrypted messaging without a phone number. Opening Tern…</p>
 <div class="actions">
 <a class="btn on" id="open" href="#">Open in Tern</a>
 <button type="button" class="btn" id="copy">Copy Tern ID</button>
@@ -79,12 +79,17 @@ tern<span class="tm" aria-hidden="true">&trade;</span>
   ok.hidden = false;
   document.getElementById('pin').textContent = pin;
   document.title = 'Tern ID ' + pin;
+
+  // Custom scheme — works even when https App Links aren't verified yet
+  // (common right after sideload, or when Camera opens Chrome).
   var app = 'org.nomli.nlite://i/' + pin;
-  var intent = 'intent://tern.niilox.com/i/' + pin +
-    '#Intent;scheme=https;package=org.nomli.nlite;S.browser_fallback_url=' +
-    encodeURIComponent('https://tern.niilox.com/i/' + pin) + ';end';
+  var intent = 'intent://i/' + pin +
+    '#Intent;scheme=org.nomli.nlite;package=org.nomli.nlite;end';
+  var isAndroid = /android/i.test(navigator.userAgent);
+  var openHref = isAndroid ? intent : app;
   var open = document.getElementById('open');
-  open.href = /android/i.test(navigator.userAgent) ? intent : app;
+  open.href = openHref;
+
   document.getElementById('copy').onclick = function () {
     if (navigator.clipboard && navigator.clipboard.writeText) {
       navigator.clipboard.writeText(pin);
@@ -96,6 +101,13 @@ tern<span class="tm" aria-hidden="true">&trade;</span>
     }
     this.textContent = 'Copied';
   };
+
+  // Auto-open Tern once. If the app isn't installed, the user stays here.
+  var skip = /[?&]stay=1(?:&|$)/.test(location.search) || sessionStorage.getItem('tern_opened_' + pin);
+  if (!skip) {
+    sessionStorage.setItem('tern_opened_' + pin, '1');
+    setTimeout(function () { location.href = openHref; }, 60);
+  }
 })();
 </script>
 </body>
