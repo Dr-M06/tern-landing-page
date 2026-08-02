@@ -61,18 +61,28 @@ tern<span class="tm" aria-hidden="true">&trade;</span>
 
 <script>
 (function () {
-  var m = location.pathname.match(/\/i\/([0-9A-Fa-f]{8})\/?$/);
+  var pin = null;
+  var m = location.pathname.match(/\/i\/([0-9A-Fa-f]{8})\/?$/i);
+  if (m) pin = m[1];
+  if (!pin && location.hash) {
+    var h = location.hash.replace(/^#/, '');
+    if (/^[0-9A-Fa-f]{8}$/.test(h)) pin = h;
+  }
+  if (!pin) {
+    var q = new URLSearchParams(location.search).get('p');
+    if (q && /^[0-9A-Fa-f]{8}$/.test(q)) pin = q;
+  }
   var ok = document.getElementById('ok');
   var bad = document.getElementById('bad');
-  if (!m) { bad.hidden = false; return; }
-  var pin = m[1].toUpperCase();
+  if (!pin) { bad.hidden = false; return; }
+  pin = pin.toUpperCase();
   ok.hidden = false;
   document.getElementById('pin').textContent = pin;
   document.title = 'Tern ID ' + pin;
   var app = 'org.nomli.nlite://i/' + pin;
   var intent = 'intent://tern.niilox.com/i/' + pin +
     '#Intent;scheme=https;package=org.nomli.nlite;S.browser_fallback_url=' +
-    encodeURIComponent(location.href) + ';end';
+    encodeURIComponent('https://tern.niilox.com/i/' + pin) + ';end';
   var open = document.getElementById('open');
   open.href = /android/i.test(navigator.userAgent) ? intent : app;
   document.getElementById('copy').onclick = function () {
