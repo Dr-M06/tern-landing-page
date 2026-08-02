@@ -4,7 +4,7 @@
   Permissions-Policy: geolocation=(), camera=(), microphone=(), payment=()
   Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
   X-Robots-Tag: index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1
-  Content-Security-Policy: default-src 'none'; img-src 'self' data:; style-src 'sha256-3kPPw4qwxlAEn4XlGIkWwb7Ht8a4jPv2K6vAtq55q3Y=' 'sha256-AjTI4ux0LUf/Sq6goiVffDuC5KhLF1x6jesAeyGx5vM=' 'sha256-iT1svZpi5KQzPFJsGDB6XWN2RiVLCnzgOhG5QFBdR54='; script-src 'sha256-4Qvo/LZGWBZalIVjIgtXfoeunwriT41c99u16VrTgs0=' 'sha256-qBts4zAASldi0cOI4KNwolW/q3aV2UcwMzXRSVKlo0o='; base-uri 'none'; form-action 'none'
+  Content-Security-Policy: default-src 'none'; img-src 'self' data:; style-src 'sha256-3kPPw4qwxlAEn4XlGIkWwb7Ht8a4jPv2K6vAtq55q3Y=' 'sha256-AjTI4ux0LUf/Sq6goiVffDuC5KhLF1x6jesAeyGx5vM=' 'sha256-W8ZwMqrjV7mZGjym/kEFA1d8mB8GeIpzn4fXdZDZG3Y='; script-src 'sha256-4Qvo/LZGWBZalIVjIgtXfoeunwriT41c99u16VrTgs0=' 'sha256-qBts4zAASldi0cOI4KNwolW/q3aV2UcwMzXRSVKlo0o='; base-uri 'none'; form-action 'none'
   Cache-Control: public, max-age=300, stale-while-revalidate=604800
 
 /robots.txt
@@ -45,8 +45,8 @@
 
 /nlite-latest.apk
   Content-Type: application/vnd.android.package-archive
-  Content-Disposition: attachment; filename="nlite.apk"
-  Cache-Control: public, max-age=31536000, immutable
+  Content-Disposition: attachment; filename="tern.apk"
+  Cache-Control: public, max-age=3600
 
 /i/*
   X-Robots-Tag: noindex, nofollow
