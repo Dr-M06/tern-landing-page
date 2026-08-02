@@ -5,8 +5,8 @@
 Tern is a tiny end-to-end encrypted messenger from Nomli Tech Limited.
 Public site pages (all crawlable):
 
-- [Home](https://nlite.nomli.cc/): product overview and size claims
-- [Privacy](https://nlite.nomli.cc/privacy/): how data is handled
-- [Terms](https://nlite.nomli.cc/terms/): terms of use
+- [Home](https://tern.niilox.com/): product overview and size claims
+- [Privacy](https://tern.niilox.com/privacy/): how data is handled
+- [Terms](https://tern.niilox.com/terms/): terms of use
 
 Contact: dev@niilox.com

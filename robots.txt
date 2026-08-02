@@ -65,4 +65,4 @@ Allow: /
 # Content Signals — allow search, AI answers, and training on this public site.
 # Content-Signal: search=yes, ai-input=yes, ai-train=yes
 
-Sitemap: https://nlite.nomli.cc/sitemap.xml
+Sitemap: https://tern.niilox.com/sitemap.xml
