@@ -52,7 +52,7 @@ footer a:hover{color:var(--ink)}
 </header>
 
 <h1>Privacy</h1>
-<p class="meta">Last updated: 2 August 2026</p>
+<p class="meta">Last updated: 8 August 2026</p>
 <div class="legal">
 
   <h2>The short version</h2>
@@ -61,7 +61,8 @@ footer a:hover{color:var(--ink)}
   number or your contacts. We do not show ads, and we do not sell anything
   about you to anyone.</p>
   <p>We do store some things, because a messaging service cannot work
-  otherwise. That list is below, and it is the whole list.</p>
+  otherwise. That list is below, and it is the whole list. Profile pictures
+  are different from message media — see below.</p>
 
   <h2>Who we are</h2>
   <p>Tern is operated by Nomli Tech Limited (the data controller). For anything
@@ -82,14 +83,20 @@ footer a:hover{color:var(--ink)}
     timestamp so we know where to send them. Deleted the moment they are
     delivered, and discarded after <strong>30 days</strong> if they never
     are.</li>
-    <li><strong>Encrypted files.</strong> Photos, documents and profile
-    pictures are encrypted before upload and stored as bytes we cannot read.
-    Photos and documents are deleted after 30 days. Profile pictures are
-    deleted after a year of inactivity, or when you clear or uninstall the
+    <li><strong>Message media.</strong> Photos, voice notes and documents you
+    send in a chat are encrypted on your phone with a key only you and the
+    recipient hold. We store the ciphertext until delivery (or up to
+    <strong>30 days</strong>), and we cannot read it.</li>
+    <li><strong>Profile pictures.</strong> If you set one, it is encrypted at
+    rest, but the key is published with your public directory entry so chat
+    partners can show your picture without a prior message. That means we
+    (and anyone who can read that directory entry) can decrypt the image.
+    Deleted after a year of inactivity, or when you clear or uninstall the
     app and we later remove unused directory data.</li>
     <li><strong>Your public encryption keys</strong> (identity and optional
     signing key, and an optional avatar descriptor), so other people can
-    message you securely. Kept while you keep using Tern.</li>
+    message you securely and show your profile picture. Kept while you keep
+    using Tern.</li>
     <li><strong>Connection records</strong>, including your IP address, kept
     for <strong>14 days</strong> to detect abuse and keep the service
     running.</li>
@@ -102,8 +109,9 @@ footer a:hover{color:var(--ink)}
 
   <h2>What we never have</h2>
   <ul>
-    <li>The contents of your messages, voice notes, photos or documents,
-    unless you report them to us.</li>
+    <li>The contents of your messages, voice notes, or photos and documents
+    sent in a chat, unless you report them to us. (Profile pictures are
+    different — see above.)</li>
     <li>Your phone number. Tern does not use one.</li>
     <li>Your contacts or address book. The app does not request permission to
     read them, and your nicknames for people never leave your phone.</li>
@@ -147,15 +155,16 @@ footer a:hover{color:var(--ink)}
   phones. Reports and connection records are kept for the periods above.</p>
 
   <h2>Children</h2>
-  <p>Tern is not for anyone under 13. If you are under 18, check your local
+  <p>Tern is not for anyone under 16. If you are under 18, check your local
   law and get a parent’s permission before using it. If we learn that someone
-  under 13 is using Tern, we remove what we hold for that Tern ID.</p>
+  under 16 is using Tern, we remove what we hold for that Tern ID.</p>
 
   <h2>Security</h2>
-  <p>Messages are end-to-end encrypted. Files are encrypted with a key that
-  only you and the person you sent them to ever hold. Connections to our
-  servers are encrypted in transit. No system is perfect, and we will tell you
-  if something happens that affects you.</p>
+  <p>Messages and chat media are end-to-end encrypted with keys only you and
+  the recipient hold. Profile pictures are encrypted at rest but decryptable
+  from the public directory entry, so partners can see them. Connections to
+  our servers are encrypted in transit. No system is perfect, and we will tell
+  you if something happens that affects you.</p>
 
   <h2>Changes</h2>
   <p>If we change this policy we will update the date at the top and tell you
