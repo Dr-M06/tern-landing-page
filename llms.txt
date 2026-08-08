@@ -9,4 +9,4 @@ Public site pages (all crawlable):
 - [Privacy](https://tern.niilox.com/privacy/): how data is handled
 - [Terms](https://tern.niilox.com/terms/): terms of use
 
-Contact: dev@niilox.com
+Contact: support-tern@niilox.com
