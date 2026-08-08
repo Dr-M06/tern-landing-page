@@ -1,6 +1,6 @@
 # Tern
 
-Public site for Tern: landing, privacy, and terms.
+Public site for Tern: landing, privacy, terms, and account deletion.
 
 Contact: support-tern@niilox.com
 
@@ -8,6 +8,7 @@ Contact: support-tern@niilox.com
 index.html
 privacy/
 terms/
+delete/
 _headers
 ```
 

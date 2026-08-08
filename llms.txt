@@ -8,5 +8,6 @@ Public site pages (all crawlable):
 - [Home](https://tern.niilox.com/): product overview and size claims
 - [Privacy](https://tern.niilox.com/privacy/): how data is handled
 - [Terms](https://tern.niilox.com/terms/): terms of use
+- [Delete account](https://tern.niilox.com/delete/): how to request account deletion
 
 Contact: support-tern@niilox.com
